@@ -1,28 +1,34 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <article class="paper" role="document">
+    <MyProfile />
+
+    <section class="section two-col">
+      <MyEducation />
+      <MySkills />
+    </section>
+
+    <footer class="section">
+      <h2>Contact Information</h2>
+      <p class="meta">
+        Address: Mansfield Residences, Angeles City, Philippines •
+        Email: angeleskiancharles@gmail.com •
+        Phone: +63 929 641 8227
+      </p>
+    </footer>
+  </article>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MyProfile from "./components/MyProfile.vue";
+import MyEducation from "./components/MyEducation.vue";
+import MySkills from "./components/MySkills.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    MyProfile,
+    MyEducation,
+    MySkills
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
